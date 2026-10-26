@@ -28,13 +28,24 @@
 // console.log(student.greet());
 
 
-const jsonData = '{"name":"Rahul","age":20,"course":"IT"}';
+// const jsonData = '{"name":"Rahul","age":20,"course":"IT"}';
 
-const student = JSON.parse(jsonData);
+// const student = JSON.parse(jsonData);
 
-console.log(student);
-console.log(student.name);
-console.log(student.age);  
-console.log(student.course); 
+// console.log(student);
+// console.log(student.name);
+// console.log(student.age);  
+// console.log(student.course); 
+const student = {
+    name: "Priya",
+    age: 21,
+    course: "Python"
+};
+
+const jsonString = JSON.stringify(student);
+
+console.log(jsonString);
+console.log(typeof student);
+console.log(typeof jsonString);
 
 
